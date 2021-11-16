@@ -1,5 +1,5 @@
-# Project Name
-Project description
+# Fed Savings Bonds Redemption Tables 
+To run a WebServices call to save the Savings Bond File localy then run a PowerShell script to format the file to match the manually downloaded format.
 
 # Disclaimer
 No Support and No Warranty are provided by SMA Technologies for this project and related material. The use of this project's files is on your own risk.
@@ -7,9 +7,16 @@ No Support and No Warranty are provided by SMA Technologies for this project and
 SMA Technologies assumes no liability for damage caused by the usage of any of the files offered here via this Github repository.
 
 # Prerequisites
-
+Powershell 5.1+
+OpCon MSLSAM v19+
+OpCon Release v18.3+
+Opcon WebServices v20.4+
 
 # Instructions
+1. Create a Global Property called Path Bonds API File with the value being the path to where you want the file saved. I.E. C:\\ProgramData\\OpConxps\\Bonds
+2. Create and/or verify Global Property of $SCHEDULE DATEYYYY-MM
+3. Run a WebServices job using the FedBondsWebServicesTemplate.json
+4. Run a Embedded Script using the OpConBondFile.ps1 passing in parmater  -SourceFile I.E. "C:\ProgramData\OpConxps\Bonds\Bonds.csv" 
 
 
 # License
