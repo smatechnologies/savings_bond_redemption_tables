@@ -7,10 +7,10 @@ No Support and No Warranty are provided by SMA Technologies for this project and
 SMA Technologies assumes no liability for damage caused by the usage of any of the files offered here via this Github repository.
 
 # Prerequisites
-Powershell 5.1+
-OpCon MSLSAM v19+
-OpCon Release v18.3+
-Opcon WebServices v20.4+
+* Powershell 5.1+
+* OpCon MSLSAM v19+
+* OpCon Release v18.3+
+* Opcon WebServices v20.4+
 
 # Instructions
 1. Create a Global Property called Path Bonds API File with the value being the path to where you want the file saved. I.E. C:\\ProgramData\\OpConxps\\Bonds
