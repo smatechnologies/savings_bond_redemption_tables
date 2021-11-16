@@ -1,0 +1,25 @@
+{
+  "templateid" : null,
+  "steps" : [ {
+    "function" : "GET",
+    "url" : "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/sb_value?filter=redemp_period:gte:[[$SCHEDULE DATEYYYY-MM]]&format=csv&page[number]=1&page[size]=3000",
+    "proxyServer" : null,
+    "request" : {
+      "headers" : [ ],
+      "contentType" : "application/json",
+      "body" : null,
+      "fileName" : null
+    },
+    "response" : {
+      "contentType" : "application/json",
+      "variables" : [ ],
+      "ignoreResult" : false,
+      "stepCompletionCode" : 200,
+      "responseDataCheck" : null,
+      "fileName" : "C:\\ProgramData\\OpConxps\\Bonds\\bonds.csv"
+    }
+  } ],
+  "variables" : [ ],
+  "environmentVariables" : [ ],
+  "properties" : [ ]
+}
