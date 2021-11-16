@@ -16,7 +16,7 @@
       "ignoreResult" : false,
       "stepCompletionCode" : 200,
       "responseDataCheck" : null,
-      "fileName" : "C:\\ProgramData\\OpConxps\\Bonds\\bonds.csv"
+      "fileName" : "[[Path Bonds API File]]\\bonds.csv"
     }
   } ],
   "variables" : [ ],
