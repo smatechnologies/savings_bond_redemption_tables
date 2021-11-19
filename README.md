@@ -22,11 +22,11 @@ SMA Technologies assumes no liability for damage caused by the usage of any of t
 ```
 C:\\ProgramData\\OpConxps\\Bonds
 ```
-3. Create and/or verify Global Property of $SCHEDULE DATEYYYY-MM
+3. Create and/or verify Global Property of **$SCHEDULE DATEYYYY-MM**
 4. Run a WebServices job using the FedBondsWebServicesTemplate.json
-5. Run a Embedded Script using the OpConBondFile.ps1 passing in parmater  
+5. Run a Embedded Script using the OpConBondFile.ps1 passing in parmater similar to the example below: 
 ```
--SourceFile I.E. "C:\ProgramData\OpConxps\Bonds\Bonds.csv" 
+-SourceFile "C:\ProgramData\OpConxps\Bonds\Bonds.csv" 
 ```
 
 # License
