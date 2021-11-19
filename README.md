@@ -1,5 +1,10 @@
 # Fed Savings Bonds Redemption Tables 
-To run a WebServices call to save the Savings Bond File localy then run a PowerShell script to format the file to match the manually downloaded format.
+The goal of this solution is to automatically download the **Savings Bond Redemption** tables from the United States Treasury and then load the file into your core banking system. There are two steps involved.
+1. Use the Treasury's API to download the file from the following location.
+  * https://fiscaldata.treasury.gov/datasets/redemption-tables/redemption-tables 
+2. Run a powershell script to reformat the file in order to mirror how the file looks if manually downloaded. This allows you to load the file into your core banking system without updating and scripts or programs within that system. 
+
+SMA Technologies' Webservices connector can used the JSON file within this solution as a template to download the file. 
 
 # Disclaimer
 No Support and No Warranty are provided by SMA Technologies for this project and related material. The use of this project's files is on your own risk.
@@ -16,8 +21,10 @@ SMA Technologies assumes no liability for damage caused by the usage of any of t
 1. Create a Global Property called Path Bonds API File with the value being the path to where you want the file saved. I.E. C:\\ProgramData\\OpConxps\\Bonds
 2. Create and/or verify Global Property of $SCHEDULE DATEYYYY-MM
 3. Run a WebServices job using the FedBondsWebServicesTemplate.json
-4. Run a Embedded Script using the OpConBondFile.ps1 passing in parmater  -SourceFile I.E. "C:\ProgramData\OpConxps\Bonds\Bonds.csv" 
-
+4. Run a Embedded Script using the OpConBondFile.ps1 passing in parmater  
+```
+-SourceFile I.E. "C:\ProgramData\OpConxps\Bonds\Bonds.csv" 
+```
 
 # License
 Copyright 2019 SMA Technologies
